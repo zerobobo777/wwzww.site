@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo" ><img src="https://images.seeklogo.com/logo-png/42/1/apple-logo-png_seeklogo-427436.png" alt="Apple Logo"></a>
+
+    <nav>
+        <button data-category="Store">Store</button>
+        <button data-category="Mac">Mac</button>
+        <button data-category="iPad">iPad</button>
+        <button data-category="iPhone">iPhone</button>
+        <button data-category="Watch">Watch</button>
+        <button data-category="AirPods">AirPods</button>
+        <button data-category="Vision">Vision</button>
+        <button data-category="Home">Home</button>
+        <button data-category="Support">Support</button>
+    </nav>
+
+    <div class="icons">
+        <button id="searchBtn">⌕</button>
+        <button id="cartBtn" class="cart-button">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdaGuBXQ1dN2qHG3uicLB7btRSt-4F8cDHBrL70GnDTw&s=10" alt="Shopping Cart">
+    <span id="cartCount">0</span>
+</button>
+    </div>
+</header>
+
+<div class="search-area" id="searchArea">
+    <input type="text" id="searchInput" placeholder="Search Apple products...">
+</div>
+
+<main id="homePage">
+
+    <section class="hero">
+        <div>
+            <h1>Welcome Apple Store.</h1>
+            <p>Innovation. Design. Technology.</p>
+            <button class="primary" data-category="Store">Explore Store</button>
+        </div>
+    </section>
+
+    <section style="background-color: white; color: black;" class="feature dark">
+        <h1>iPhone Duo</h1>
+        <p>Two screens. One incredible experience.</p>
+        <button class="primary" data-product="iPhone Duo">Learn More</button>
+        <img src="https://www.apple.com/newsroom/videos/2026/autoplay/09/apple-unveils-iphone-duo/apple-iphone-duo-opening/posters/Apple-iPhone-Duo-opening-iPhone-Duo-260909.jpg.large_2x.jpg">
+    </section>
+
+    <section style="background-color: black; color: white;" class="feature">
+        <h1>iPhone 18 Pro Max</h1>
+        <p>Pro performance. Beyond imagination.</p>
+        <button class="primary" data-product="iPhone 18 Pro Max">Learn More</button>
+        <img id="promax" src="https://www.apple.com/v/iphone-18-pro/a/images/meta/iphone-18-pro_overview__bl9no3txkonm_og.png?202609040006">
+    </section>
+
+    <div class="two-columns">
+        <section class="tile dark">
+            <p class="homeww" style="color: black;">Home View</p>
+            <p>Your home. Smarter than ever.</p>
+            <button class="primary" data-category="Home">Explore</button>
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/homeview-model-unselect-gallery-2-202610_FMT_WHH?wid=1280&hei=720&fmt=p-jpg&qlt=80&.v=TjFjNGcyOTRIY2xNVEhlU05RbzlYdks0TkxxOFYxN2dtSHJMdW5sNDFVOTN2UENacWR6eFFtM29JMUNmYU1XeFBTRzhFbXhrSlpyaVYxRTU4VUZ2NXlaSE1Qa0haZTFvMWVJTkxjaWwxSncxaHErMCtkQXBObWMvWXJUVUFGaUZZZXJ2NkRmVWd2VXIrOWttWWF1dkJn&traceId=1">
+        </section>
+
+        <section class="tile">
+            <h1>iPad</h1>
+            <p>Touch. Create. Explore.</p>
+            <button class="primary" data-category="iPad">Explore</button>
+            <img src="https://www.apple.com/v/ipad-11/d/images/overview/hero/hero__crzh9misvcuq_large.jpg">
+        </section>
+
+        <section class="tile">
+            <h1>Apple Watch</h1>
+            <p>A healthy life. A smarter watch.</p>
+            <button class="primary" data-category="Watch">Explore</button>
+            <img src="https://www.apple.com/assets-www/en_UZ/watch/og/watch_og_fbf502393.png">
+        </section>
+
+        <section class="tile dark">
+            <h1>AirPods</h1>
+            <p>Sound without limits.</p>
+            <button class="primary" data-category="AirPods">Explore</button>
+            <img src="https://cdn.mediapark.uz/imgs/54f7da89-9fae-409d-b662-3f3bfd2aaf29_AirPods_Pro_3_N_PDP_Image_Position_2__ce-WW-(1).webp">
+        </section>
+    </div>
+
+</main>
+
+<section class="catalog" id="catalog" hidden>
+    <h1 id="catalogTitle">Apple Products</h1>
+    <p id="catalogDescription">Explore our products.</p>
+    <button class="back" id="backBtn">← Back to Home</button>
+    <div class="products" id="products"></div>
+</section>
+
+<section class="details" id="details" hidden>
+    <button class="back" id="detailsBack">← Back</button>
+    <div id="detailsContent"></div>
+</section>
+
+<aside class="cart" id="cart">
+    <div class="cart-header">
+        <h2>Your Bag 🛍️</h2>
+        <button id="closeCart">✕</button>
+    </div>
+    <div id="cartItems"></div>
+    <h3>Total: $<span id="total">0</span></h3>
+    <button class="primary" id="checkout">Checkout</button>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+
+<footer>
+    <h2>Apple Store</h2>
+    <p>Designed for the future.</p>
+    <p>Copyright © 2026 Apple Store.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
